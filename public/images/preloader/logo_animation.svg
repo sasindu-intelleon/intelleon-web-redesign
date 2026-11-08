@@ -1,0 +1,15 @@
+<svg viewBox="0 0 225 225" xmlns="http://www.w3.org/2000/svg">
+  <!-- here i changed background and reference path animation with stroke behaviour -->
+  <path d="M 110,0 0,0 0,224 224,224 224,0 10,0"
+        fill="none"
+        stroke="white"
+        stroke-width="90"
+        stroke-dasharray="1000"
+        stroke-dashoffset="1000">
+    <animate attributeName="stroke-dashoffset" from="1000" to="0" dur="2s" fill="freeze" />
+  </path>
+
+  <!-- here changed inner white square, centered and black square that I inserted  -->
+  <rect x="79" y="77" width="70" height="70" fill="white" />
+  <rect x="91" y="-45" width="45" height="120" fill="black" />
+</svg>
