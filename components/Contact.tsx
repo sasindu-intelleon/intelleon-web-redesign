@@ -24,7 +24,7 @@ export default function Contact() {
 
           <div className="flex items-center gap-2 group tracking-widest">
             <img
-              src="/images/img_logo_intelleon.png"
+              src="./images/img_logo_intelleon.png"
               alt="INTELLEON Logo"
               className="h-7 md:h-8 w-auto object-contain brightness-0 dark:brightness-100 transition-all duration-300"
             />

@@ -52,7 +52,7 @@ export default function KnowIntelleon() {
           <img
             alt="Modern Glass Skyscrapers City Architecture"
             className="w-full h-full object-cover brightness-100 contrast-105 dark:brightness-90 group-hover:scale-105 transition-all duration-700"
-            src="/images/img_know_intelleon.webp"
+            src="./images/img_know_intelleon.webp"
           />
         </div>
       </div>
