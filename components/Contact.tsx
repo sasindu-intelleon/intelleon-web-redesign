@@ -1,19 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useTransition, useEffect } from "react";
+import { submitContactForm } from "@/app/actions/contact"; // Server action import
 
 export default function Contact() {
-  const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isPending, startTransition] = useTransition();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  // Success message eka awilla thappara 5kin auto hide wenna
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSuccess(true);
-      (e.target as HTMLFormElement).reset();
-    }, 800);
+    setErrorMessage("");
+    
+    const formData = new FormData(e.currentTarget);
+
+    startTransition(async () => {
+      const result = await submitContactForm(formData);
+      if (result.success) {
+        setSuccess(true);
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setErrorMessage(result.error || "Something went wrong.");
+      }
+    });
   };
 
   return (
@@ -21,7 +41,6 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Info Column */}
         <div className="lg:col-span-5 space-y-8">
-
           <div className="flex items-center gap-2 group tracking-widest">
             <img
               src="./images/img_logo_intelleon.png"
@@ -35,10 +54,7 @@ export default function Contact() {
               <div className="w-8 flex items-center text-slate-400 dark:text-zinc-400">
                 <i className="fa-regular fa-envelope text-lg"></i>
               </div>
-              <a
-                className="hover:text-slate-900 dark:hover:text-white transition"
-                href="mailto:info@intelleon.com"
-              >
+              <a className="hover:text-slate-900 dark:hover:text-white transition" href="mailto:info@intelleon.com">
                 info@intelleon.com
               </a>
             </div>
@@ -46,18 +62,14 @@ export default function Contact() {
               <div className="w-8 flex items-center text-slate-400 dark:text-zinc-400">
                 <i className="fa-solid fa-phone text-base"></i>
               </div>
-              <a
-                className="hover:text-slate-900 dark:hover:text-white transition"
-                href="tel:+94777266411"
-              >
+              <a className="hover:text-slate-900 dark:hover:text-white transition" href="tel:+94777266411">
                 +94 777 266 411
               </a>
             </div>
           </div>
 
           <p className="text-xs text-slate-500 dark:text-zinc-500 leading-relaxed max-w-sm pt-2 transition-colors duration-300">
-            Ready to engineer your future-ready digital ecosystem? Get in touch
-            with our specialist engineering consultants today.
+            Ready to engineer your future-ready digital ecosystem? Get in touch with our specialist engineering consultants today.
           </p>
         </div>
 
@@ -65,7 +77,7 @@ export default function Contact() {
         <div className="lg:col-span-7">
           <form className="space-y-4" onSubmit={handleSubmit}>
             {success && (
-              <div className="mb-4 p-4 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-cyan-500/40 shadow-xl dark:shadow-2xl transition-all duration-300">
+              <div className="mb-4 p-4 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-cyan-500/40 shadow-xl transition-all duration-300">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-cyan-500/10 border border-cyan-500/50 flex items-center justify-center text-cyan-600 dark:text-brandCyan flex-shrink-0 mt-0.5">
                     <i className="fa-solid fa-calendar-check text-sm"></i>
@@ -78,8 +90,7 @@ export default function Contact() {
                       </span>
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
-                      Thank you for reaching out. Our specialist engineering
-                      consultants will be in touch shortly.
+                      Thank you for reaching out. Our specialist engineering consultants will be in touch shortly.
                     </p>
                   </div>
                   <button
@@ -93,8 +104,15 @@ export default function Contact() {
               </div>
             )}
 
+            {errorMessage && (
+              <div className="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-600 dark:text-red-400 text-xs">
+                {errorMessage}
+              </div>
+            )}
+
             <div>
               <input
+                name="name"
                 className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
                 placeholder="Name *"
                 required
@@ -103,6 +121,7 @@ export default function Contact() {
             </div>
             <div>
               <input
+                name="phone"
                 className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
                 placeholder="Mobile / Telephone"
                 type="tel"
@@ -110,6 +129,7 @@ export default function Contact() {
             </div>
             <div>
               <input
+                name="email"
                 className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
                 placeholder="Email *"
                 required
@@ -118,6 +138,7 @@ export default function Contact() {
             </div>
             <div>
               <textarea
+                name="message"
                 className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition resize-none shadow-sm"
                 placeholder="Message"
                 rows={5}
@@ -125,11 +146,11 @@ export default function Contact() {
             </div>
             <div className="flex justify-end pt-2">
               <button
-                className="px-8 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide bg-slate-900 text-white dark:bg-zinc-800 dark:text-zinc-200 border border-slate-900 dark:border-zinc-700 hover:bg-slate-800 dark:hover:bg-zinc-700 hover:text-white transition duration-200 shadow-md"
+                className="px-8 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide bg-slate-900 text-white dark:bg-zinc-800 dark:text-zinc-200 border border-slate-900 dark:border-zinc-700 hover:bg-slate-800 dark:hover:bg-zinc-700 hover:text-white transition duration-200 shadow-md disabled:opacity-50"
                 type="submit"
-                disabled={loading}
+                disabled={isPending}
               >
-                {loading ? (
+                {isPending ? (
                   <>
                     <i className="fa-solid fa-spinner fa-spin mr-2"></i>
                     Sending...
