@@ -1,5 +1,3 @@
-
-
 export default function SlideZero(props: { currentSlide: number }) {
   return (
     <div
@@ -7,8 +5,9 @@ export default function SlideZero(props: { currentSlide: number }) {
     >
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 items-center">
         <div className="xl:col-span-6 flex justify-center order-2 xl:order-1 relative py-6">
-          <div className="relative w-[300px] h-[340px] sm:w-[380px] sm:h-[400px]">
-            <div className="absolute right-2 top-0 w-36 sm:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-tr from-cyan-500/50 to-slate-400/40 dark:to-white/40">
+          <div className="relative w-[280px] h-[320px] sm:w-[360px] sm:h-[380px] lg:w-[330px] lg:h-[360px] xl:w-[380px] xl:h-[390px]">
+            {/* Top-Right Hexagon */}
+            <div className="absolute right-2 top-0 w-32 sm:w-44 lg:w-40 xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-tr from-cyan-500/50 to-slate-400/40 dark:to-white/40">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <img
                   alt="Architecture"
@@ -17,7 +16,9 @@ export default function SlideZero(props: { currentSlide: number }) {
                 />
               </div>
             </div>
-            <div className="absolute left-0 top-16 sm:top-20 w-40 sm:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
+
+            {/* Top-Left Hexagon */}
+            <div className="absolute left-0 top-14 sm:top-18 lg:top-16 xl:top-20 w-36 sm:w-48 lg:w-44 xl:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <img
                   alt="Analytics"
@@ -26,7 +27,9 @@ export default function SlideZero(props: { currentSlide: number }) {
                 />
               </div>
             </div>
-            <div className="absolute right-4 bottom-0 w-36 sm:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-br from-slate-400/40 dark:to-white/40 to-cyan-500/40">
+
+            {/* Bottom-Right Hexagon */}
+            <div className="absolute right-4 bottom-0 w-32 sm:w-44 lg:w-40 xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-br from-slate-400/40 dark:to-white/40 to-cyan-500/40">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <img
                   alt="Partnership"
@@ -38,10 +41,10 @@ export default function SlideZero(props: { currentSlide: number }) {
           </div>
         </div>
         <div className="xl:col-span-6 flex flex-col items-start gap-6 order-1 xl:order-2">
-          <div className="font-tech text-cyan-600 dark:text-brandCyan text-xl sm:text-2xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
+          <div className="font-tech text-cyan-600 dark:text-brandCyan text-md sm:text-1xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
             Intelligence: ON_
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">
+          <h1 className="text-1xl sm:text-4xl md:text-3xl font-heading font-medium md:font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">
             We are about Engineering Smart, Scalable, Future-Ready Technology
             for Data Driven Ecosystems!
           </h1>

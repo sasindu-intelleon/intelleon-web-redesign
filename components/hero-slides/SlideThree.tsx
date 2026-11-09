@@ -45,7 +45,7 @@ export default function SlideThree(props: { currentSlide: number }) {
           </div>
         </div>
         <div className="lg:col-span-5 flex justify-center items-center py-4 relative">
-          <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
+          <div className="relative w-64 h-64 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
             <img
               alt="NOM POS"
               className="w-full h-full object-cover rounded-xl brightness-100 dark:brightness-90"

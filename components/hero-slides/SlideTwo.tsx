@@ -9,7 +9,7 @@ export default function SlideTwo(props: { currentSlide: number }) {
             <img
               src="./images/product/organizer_logo.png"
               alt="Organizer Logo"
-              className="w-36 h-36 md:w-[75%] md:h-auto sm:w-44 sm:h-44 object-contain"
+              className="w-36 h-36 md:w-65 md:h-auto sm:w-44 sm:h-44 object-contain"
             />
             <div className="absolute -bottom-6 font-heading font-extrabold text-2xl text-slate-900 dark:text-white tracking-widest uppercase transition-colors duration-300">
               Organizer
