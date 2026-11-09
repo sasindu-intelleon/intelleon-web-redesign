@@ -1,0 +1,15 @@
+# Allow all standard search engines and AI crawlers
+User-agent: *
+Allow: /
+
+# Specifically ensure AI search bots have full access to index content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.intelleon.com/sitemap.xml
