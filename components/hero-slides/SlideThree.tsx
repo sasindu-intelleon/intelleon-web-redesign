@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function SlideThree(props: { currentSlide: number }) {
   return (
     <div
@@ -46,10 +48,12 @@ export default function SlideThree(props: { currentSlide: number }) {
         </div>
         <div className="lg:col-span-5 flex justify-center items-center py-4 relative">
           <div className="relative w-64 h-64 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
-            <img
-              alt="NOM POS"
-              className="w-full h-full object-cover rounded-xl brightness-100 dark:brightness-90"
+            <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgdZgDsAEVltUuV9WU-jfLmFqtMq65g5MtH0p-BTqfgVt40j0x_xEr6CxwG11Fpbt2J4AuAOWjSvZm7Gj0vyzYG_zmBw03IYZFtD80D6WWnzWhOdx_zS6shogpgs8ixPP51wxrbjCXwxG6pzxfpuB1uIUWO6RsFonhxfNIOInc1qt5zZtxJqIgj2TZcsANnBxeHpxwVJq9McxCfGlJUtN9jVjw_vDTykPhgHVsVgqx"
+              alt="NOM POS - Enterprise Point of Sale Software Solution by INTELLEON"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              className="object-cover rounded-xl brightness-100 dark:brightness-90"
             />
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface HeaderProps {
   onToggleMobileMenu: () => void;
@@ -46,9 +47,12 @@ export default function Header({ onToggleMobileMenu }: HeaderProps) {
           className="flex items-center gap-2 group tracking-widest"
           href="/#hero"
         >
-          <img
+          <Image
             src="/images/img_logo_intelleon.png"
-            alt="INTELLEON Logo"
+            alt="INTELLEON - Custom Software Development Logo"
+            width={150} 
+            height={32}
+            priority
             className="h-7 md:h-8 w-auto object-contain brightness-0 dark:brightness-100 transition-all duration-300"
           />
         </a>
