@@ -1,6 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import SlideZero from "./hero-slides/SlideZero";
+import SlideOne from "./hero-slides/SlideOne";
+import SlideTwo from "./hero-slides/SlideTwo";
+import SlideThree from "./hero-slides/SlideThree";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -20,7 +24,7 @@ export default function Hero() {
     >
       <div className="relative w-full min-h-[460px] md:min-h-[440px] flex items-center">
         {/* SLIDE 0 */}
-        <div
+        {/* <div
           className={`hero-slide w-full transition-all duration-700 absolute ${currentSlide === 0 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
         >
           <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 items-center">
@@ -73,10 +77,10 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* SLIDE 1 */}
-        <div
+        {/* <div
           className={`hero-slide w-full transition-all duration-700 absolute ${currentSlide === 1 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
@@ -137,10 +141,10 @@ export default function Hero() {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* SLIDE 2 */}
-        <div
+        {/* <div
           className={`hero-slide w-full transition-all duration-700 absolute ${currentSlide === 2 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
@@ -184,10 +188,10 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* SLIDE 3 */}
-        <div
+        {/* <div
           className={`hero-slide w-full transition-all duration-700 absolute ${currentSlide === 3 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
         >
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
@@ -241,7 +245,12 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <SlideZero currentSlide={currentSlide} />
+        <SlideOne currentSlide={currentSlide} />
+        <SlideTwo currentSlide={currentSlide} />
+        <SlideThree currentSlide={currentSlide} />
       </div>
 
       {/* Indicators */}

@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16 flex relative">
         <Sidebar />
-        <main className="w-full lg:pl-64 flex flex-col gap-28 md:gap-36">
+        <main className="w-full lg:pl-64 flex flex-col gap-10 md:gap-12">
           <Hero />
           <KnowIntelleon />
           <WhatWeDo />
