@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function SlideZero(props: { currentSlide: number }) {
   return (
     <div
@@ -9,10 +11,13 @@ export default function SlideZero(props: { currentSlide: number }) {
             {/* Top-Right Hexagon */}
             <div className="absolute right-2 top-0 w-32 sm:w-44 lg:w-40 xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-tr from-cyan-500/50 to-slate-400/40 dark:to-white/40">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
-                <img
-                  alt="Architecture"
-                  className="w-full h-full object-cover grayscale-[30%]"
+                <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfdKgBrXv5MW0NfoEsBbYPbPZNsgWkfBpCZuzhZ6n5sw-yj4sosdn3PahQ1nKKKbmlbUsNGF1-PnOv_eHEK8cwNg-7gGhxnk6FiA22MQnhvHDpvpYxv4cRqGpQXpNSX36C2AaYwvNE0dX4HCZZKhnsikfM9YgwbITKZw-OLADjVrOY80SAvlau4RwD8OWJLL-HNZy701ciSvCp4B14XnPDbTmoZYSxVld8QTAFkuVA"
+                  alt="INTELLEON Software Architecture & Enterprise Solutions"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                  className="object-cover grayscale-[30%]"
                 />
               </div>
             </div>
@@ -20,10 +25,13 @@ export default function SlideZero(props: { currentSlide: number }) {
             {/* Top-Left Hexagon */}
             <div className="absolute left-0 top-14 sm:top-18 lg:top-16 xl:top-20 w-36 sm:w-48 lg:w-44 xl:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
-                <img
-                  alt="Analytics"
-                  className="w-full h-full object-cover"
+                <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMYhJKo85IwzrgjQ5i761TnyMlUhvoRVZM_DPERkBLvXYoegTX44REh_bOIvZ0FZApThS4GG9xgxwsZbZ_Mz2fhxoJytVZ-2jVKED1LHhdr1yT84x_QGqvOvm_RhQtHCbsGhJbeY8E-pWIEFug4wUCpN53TN4m53Z1VZv5CHpQfTMvbGj1THC4GcIniIUVJzTVDuK1YvUedazCS2XCb-gEFxD5NlqqKB4F4u-lYrg"
+                  alt="INTELLEON Enterprise Analytics & Data Intelligence Dashboard"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -31,10 +39,13 @@ export default function SlideZero(props: { currentSlide: number }) {
             {/* Bottom-Right Hexagon */}
             <div className="absolute right-4 bottom-0 w-32 sm:w-44 lg:w-40 xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-br from-slate-400/40 dark:to-white/40 to-cyan-500/40">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
-                <img
-                  alt="Partnership"
-                  className="w-full h-full object-cover grayscale-[20%]"
+                <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1BJ9mwidqt5eEF0m1jOist4JUEgdyNu2Ggj6iViAN5NWLvV8r8z4JwVAqcFF2xryy1-_FENAkyCDlfQDLHSzm4K1A_N1SzTWdmGcekTnO5FW5zDZlP3eTjLOMSrZiptHeZe6aGjAU_496_CRWK_KW1D_ctpSUs4I_7goxY5zOkqCvh8R5jys3Kl3TUxROXzg5WYV7mtuLiYDEHK_XnLYM7A5w-fsA_OwyOobKxZc-"
+                  alt="INTELLEON Strategic Technology Partnerships & Global Enterprise Collaboration"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                  className="w-full h-full object-cover grayscale-[20%]"
                 />
               </div>
             </div>

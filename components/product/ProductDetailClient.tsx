@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import MobileNavDrawer from "@/components/MobileNavDrawer";
 import Sidebar from "@/components/Sidebar";
+import Image from "next/image";
 
 type ProductDetail = {
   title: string;
@@ -125,9 +126,11 @@ export default function ProductDetailClient({ slug }: { slug: string }) {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <img
+              <Image
                 src={product.logo}
-                alt={product.title}
+                alt={`${product.title} - INTELLEON Portfolio Product`}
+                width={56} // w-14 (14 * 4px = 56px)
+                height={56} // h-14 (56px)
                 className="w-14 h-14 object-contain rounded-xl shadow-md border border-slate-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 p-1"
               />
             </div>

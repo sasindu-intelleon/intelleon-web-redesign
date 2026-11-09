@@ -2,6 +2,8 @@
 
 import { useState, useTransition, useEffect } from "react";
 import { submitContactForm } from "@/app/actions/contact"; // Server action import
+import Image from "next/image";
+import logoImg from "@/public/images/img_logo_intelleon.png";
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
@@ -22,7 +24,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setErrorMessage("");
-    
+
     const formData = new FormData(e.currentTarget);
 
     startTransition(async () => {
@@ -42,9 +44,9 @@ export default function Contact() {
         {/* Left Info Column */}
         <div className="lg:col-span-5 space-y-8">
           <div className="flex items-center gap-2 group tracking-widest">
-            <img
-              src="./images/img_logo_intelleon.png"
-              alt="INTELLEON Logo"
+            <Image
+              src={logoImg}
+              alt="INTELLEON - Custom Software Development Logo"
               className="h-7 md:h-8 w-auto object-contain brightness-0 dark:brightness-100 transition-all duration-300"
             />
           </div>
@@ -54,7 +56,10 @@ export default function Contact() {
               <div className="w-8 flex items-center text-slate-400 dark:text-zinc-400">
                 <i className="fa-regular fa-envelope text-lg"></i>
               </div>
-              <a className="hover:text-slate-900 dark:hover:text-white transition" href="mailto:info@intelleon.com">
+              <a
+                className="hover:text-slate-900 dark:hover:text-white transition"
+                href="mailto:info@intelleon.com"
+              >
                 info@intelleon.com
               </a>
             </div>
@@ -62,14 +67,18 @@ export default function Contact() {
               <div className="w-8 flex items-center text-slate-400 dark:text-zinc-400">
                 <i className="fa-solid fa-phone text-base"></i>
               </div>
-              <a className="hover:text-slate-900 dark:hover:text-white transition" href="tel:+94777266411">
+              <a
+                className="hover:text-slate-900 dark:hover:text-white transition"
+                href="tel:+94777266411"
+              >
                 +94 777 266 411
               </a>
             </div>
           </div>
 
           <p className="text-xs text-slate-500 dark:text-zinc-500 leading-relaxed max-w-sm pt-2 transition-colors duration-300">
-            Ready to engineer your future-ready digital ecosystem? Get in touch with our specialist engineering consultants today.
+            Ready to engineer your future-ready digital ecosystem? Get in touch
+            with our specialist engineering consultants today.
           </p>
         </div>
 
@@ -90,7 +99,8 @@ export default function Contact() {
                       </span>
                     </h4>
                     <p className="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed">
-                      Thank you for reaching out. Our specialist engineering consultants will be in touch shortly.
+                      Thank you for reaching out. Our specialist engineering
+                      consultants will be in touch shortly.
                     </p>
                   </div>
                   <button

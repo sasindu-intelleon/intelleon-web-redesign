@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | INTELLEON",
   },
   description:
-    "INTELLEON specializes in custom software development, delivering innovative enterprise, web, desktop, and mobile applications tailored to your business needs.",
+    "INTELLEON specializes in custom software development, delivering web, mobile, and enterprise solutions for your business.",
   keywords: [
     "custom software development",
     "enterprise solutions",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     url: "https://www.intelleon.com",
     title: "INTELLEON | Custom Software Development Company",
     description:
-      "INTELLEON specializes in custom software development, delivering innovative enterprise, web, desktop, and mobile applications tailored to your business goals.",
+      "INTELLEON specializes in custom software development, delivering web, mobile, and enterprise solutions for your business.",
     siteName: "INTELLEON",
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "INTELLEON | Custom Software Development Company",
     description:
-      "INTELLEON specializes in custom software development, delivering innovative enterprise, web, desktop, and mobile applications.",
+      "INTELLEON specializes in custom software development, delivering web, mobile, and enterprise solutions for your business.",
     creator: "@intelleon",
     images: ["https://www.intelleon.com/og-image.jpg"],
   },

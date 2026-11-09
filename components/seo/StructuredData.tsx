@@ -28,7 +28,7 @@ export default function StructuredData() {
 
     // High-level company description optimized for entity mapping and AI summaries
     description:
-      "INTELLEON specializes in custom software development, delivering innovative enterprise, web, desktop, and mobile applications tailored to your business needs.",
+      "INTELLEON specializes in custom software development, delivering web, mobile, and enterprise solutions for your business.",
 
     // Founder entity markup connecting the organization to its creator profile
     founder: {

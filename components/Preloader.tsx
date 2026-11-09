@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Preloader() {
   const [show, setShow] = useState(false);
@@ -37,9 +38,12 @@ export default function Preloader() {
       }`}
     >
       <div className="flex items-center justify-center">
-        <img
-          src="./images/preloader/logo_animation.svg"
+        <Image
+          src="/images/preloader/logo_animation.svg"
           alt="INTELLEON Loading"
+          width={128} // w-32 (32 * 4px = 128px)
+          height={128} // h-32 (128px)
+          priority
           className="w-32 h-32 object-contain"
         />
       </div>

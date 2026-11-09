@@ -1,9 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
+import Image from "next/image";
 
 interface ProductCardProps {
   title: string;
   subtitle: string;
-  categoryColor: string; // උදා: "text-orange-500" හෝ "text-amber-500"
+  categoryColor: string;
   imageBg: string;
   logoSrc: string;
   href: string;
@@ -21,10 +22,12 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div className="relative bg-white dark:bg-zinc-950 border border-slate-200 dark:border-zinc-800/80 rounded-2xl overflow-hidden group shadow-xl dark:shadow-2xl flex flex-col min-h-[380px] justify-end transition-all duration-300">
-      <img
-        alt={altText}
-        className="absolute inset-0 w-full h-full object-cover brightness-95 dark:brightness-[0.4] group-hover:brightness-100 group-hover:dark:brightness-[0.48] group-hover:scale-105 transition-all duration-700"
+      <Image
         src={imageBg}
+        alt={altText}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className="object-cover brightness-95 dark:brightness-[0.4] group-hover:brightness-100 group-hover:dark:brightness-[0.48] group-hover:scale-105 transition-all duration-700"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent dark:from-black dark:via-black/60 dark:to-transparent transition-colors duration-300"></div>
 
@@ -46,9 +49,11 @@ export default function ProductCard({
           </div>
         </div>
         <div className="text-right flex-shrink-0">
-          <img
+          <Image
             src={logoSrc}
             alt={`${title} Logo`}
+            width={48} // w-12 (12 * 4px = 48px)
+            height={48} // h-12 (48px)
             className="w-12 h-12 object-contain rounded-xl shadow-md"
           />
         </div>
