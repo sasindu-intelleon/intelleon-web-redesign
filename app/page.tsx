@@ -7,7 +7,7 @@ import Sidebar from '@/components/Sidebar';
 import Hero from '@/components/Hero';
 import KnowIntelleon from '@/components/KnowIntelleon';
 import WhatWeDo from '@/components/WhatWeDo';
-import OurProducts from '@/components/OurProducts';
+import OurProducts from '@/components/product/OurProducts';
 import Contact from '@/components/Contact';
 
 export default function Home() {
