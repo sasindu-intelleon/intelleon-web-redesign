@@ -61,7 +61,7 @@ export default function Header({ onToggleMobileMenu }: HeaderProps) {
             className="w-9 h-9 rounded-full bg-slate-100 dark:bg-zinc-800/90 text-slate-700 dark:text-zinc-200 border border-slate-300 dark:border-zinc-700 hover:text-brandCyan hover:border-brandCyan flex items-center justify-center transition-all duration-300 shadow-sm"
           >
             {isDark ? (
-              // Sun Icon (Dark mode එකේදී light mode එකට මාරු වෙන්න sun එක පෙන්වයි)
+              // Sun Icon
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 30 30"
@@ -78,7 +78,7 @@ export default function Header({ onToggleMobileMenu }: HeaderProps) {
           {/* Get in Touch Button */}
           <a
             aria-label="Get in Touch"
-            className="p-2 sm:px-6 sm:py-2 rounded-full text-xs md:text-sm font-semibold tracking-wide dark:bg-slate-900 text-white dark:bg-zinc-800/90 dark:text-zinc-200 border border-slate-900 dark:border-zinc-700 hover:bg-brandCyan hover:text-black hover:border-brandCyan hover:scale-105 shadow-sm transition-all duration-300 flex items-center justify-center"
+            className="p-2 sm:px-6 sm:py-2 rounded-full text-xs md:text-sm font-semibold tracking-wide dark:bg-slate-900 text-white dark:bg-zinc-800/90 dark:text-zinc-200 border border-slate-900 dark:border-zinc-700 hover:bg-brandCyan hover:text-black hover:border-brandCyan hover:scale-105 shadow-sm transition-all duration-300  hidden md:flex items-center justify-center"
             href="/#contact"
           >
             <i className="fa-regular fa-envelope text-sm sm:text-xs sm:mr-1.5"></i>

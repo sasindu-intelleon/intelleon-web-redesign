@@ -245,14 +245,22 @@ export default function Hero() {
       </div>
 
       {/* Indicators */}
-      <div className="flex items-center gap-2 pt-6 relative z-20">
+      <div className="flex items-center gap-2 pt-6 relative z-30">
         {[0, 1, 2, 3].map((idx) => (
           <button
             key={idx}
             onClick={() => setCurrentSlide(idx)}
             aria-label={`Slide ${idx + 1}`}
-            className={`transition-all duration-300 focus:outline-none rounded-full ${currentSlide === idx ? "w-7 h-1.5 bg-slate-900 dark:bg-white" : "w-1.5 h-1.5 bg-slate-400 dark:bg-zinc-600 hover:bg-slate-600 dark:hover:bg-zinc-400"}`}
-          ></button>
+            className="p-2 -m-2 focus:outline-none cursor-pointer group flex items-center justify-center"
+          >
+            <span
+              className={`block transition-all duration-300 rounded-full ${
+                currentSlide === idx
+                  ? "w-11 h-1.5 bg-slate-900 dark:bg-white"
+                  : "w-3 h-1.5 bg-slate-400 dark:bg-zinc-600 group-hover:bg-slate-600 dark:group-hover:bg-zinc-400"
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>
