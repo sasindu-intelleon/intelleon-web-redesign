@@ -1,4 +1,7 @@
-export const getThankYouEmailTemplate = (name: string): string => {
+export const getThankYouEmailTemplate = (
+  name: string,
+  image_url: string,
+): string => {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -93,7 +96,18 @@ export const getThankYouEmailTemplate = (name: string): string => {
     <body>
       <div class="email-container">
         <div class="email-header">
-          <h1>INTELLEON</h1>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+            <tr>
+              <td align="center" style="padding: 0;">
+                <img 
+                  src=${image_url} 
+                  alt="INTELLEON" 
+                  width="200" 
+                  style="display: block; width: 200px; max-width: 100%; height: auto; border: 0; outline: none; text-decoration: none; margin: 0 auto;"
+                />
+              </td>
+            </tr>
+          </table>
         </div>
         <div class="email-body">
           <div class="greeting">Hi ${name},</div>
