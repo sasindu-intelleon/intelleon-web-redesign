@@ -35,7 +35,7 @@ export default function SlideOne(props: { currentSlide: number }) {
         </div>
         <div className="lg:col-span-6 relative flex flex-wrap items-center justify-center lg:justify-end gap-3 sm:gap-4 p-4 font-heading font-bold select-none">
           <div className="absolute inset-0 bg-cyan-500/5 dark:bg-brandCyan/5 rounded-3xl blur-2xl pointer-events-none"></div>
-          <span className="text-1xl sm:text-4xl text-slate-800 dark:text-white/90 hover:text-cyan-600 dark:hover:text-brandCyan transition-colors px-4 py-2 bg-white dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
+          <span className="text-1xl sm:text-4xl text-slate-800 dark:text-white/90 transition-colors px-4 py-2 bg-white dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
             MOBILE
           </span>
           <span className="text-2xl sm:text-5xl text-cyan-600 dark:text-brandCyan [-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent px-4 py-2">
