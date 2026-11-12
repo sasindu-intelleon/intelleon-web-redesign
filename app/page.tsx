@@ -23,7 +23,10 @@ export default function Home() {
         onClose={() => setIsMobileMenuOpen(false)}
       />
 
-      <div className="max-w-7xl mx-auto px-6 pt-24 pb-16 flex relative">
+      <div
+        className="max-w-7xl mx-auto px-6 pt-24 pb-16 flex relative"
+        id="hero"
+      >
         <Sidebar />
         <main className="w-full lg:pl-64 flex flex-col gap-10 md:gap-12">
           <Hero />

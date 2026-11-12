@@ -63,9 +63,43 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
+      // 1. Light Mode සඳහා (කළු පාට Icons)
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/favicon-black-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/favicon-black-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/favicon-black.ico",
+        sizes: "any",
+      },
+
+      // 2. Dark Mode සඳහා (ඔයාගේ දැන් තියෙන සුදු පාට Icons)
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/favicon.ico",
+        sizes: "any",
+      },
     ],
     apple: {
       url: "/apple-touch-icon.png",
