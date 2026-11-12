@@ -13,22 +13,32 @@ export default function Sidebar() {
       "contact",
     ];
     const handleScroll = () => {
-      let current = "know-intelleon";
-      const scrollPos = window.scrollY + 250;
-      sections.forEach((id) => {
-        const el = document.getElementById(id);
+      const isAtBottom =
+        window.innerHeight + Math.round(window.scrollY) >=
+        document.documentElement.scrollHeight - 60;
+
+      if (isAtBottom) {
+        setActiveSection(sections[sections.length - 1]);
+        return;
+      }
+
+      const threshold = 200;
+      let current = sections[0];
+
+      for (let i = 0; i < sections.length; i++) {
+        const el = document.getElementById(sections[i]);
         if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPos >= top && scrollPos < top + height) {
-            current = id;
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= threshold) {
+            current = sections[i];
           }
         }
-      });
+      }
       setActiveSection(current);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
