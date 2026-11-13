@@ -18,8 +18,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className=" flex flex-col justify-center relative pt-8 md:pt-4 overflow-hidden">
-      <div className="relative w-full min-h-[680px] md:min-h-[740px] lg:min-h-[680px] xl:min-h-[500px] flex items-center ">
+    <section className=" flex flex-col min-h-[680px] md:min-h-[740px] lg:min-h-[80vh] justify-center relative pt-8 md:pt-4 overflow-hidden">
+      <div className="relative w-full h-full flex items-center ">
         <SlideZero currentSlide={currentSlide} />
         <SlideOne currentSlide={currentSlide} />
         <SlideTwo currentSlide={currentSlide} />
