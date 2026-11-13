@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-10 pb-12 scroll-mt-24" id="contact">
+    <section className="pt-10 scroll-mt-24" id="contact">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Info Column */}
         <div className="lg:col-span-5 space-y-8">
@@ -175,7 +175,7 @@ export default function Contact() {
       </div>
 
       {/* Copyright Footer */}
-      <div className="mt-20 pt-8 border-t border-slate-200 dark:border-zinc-900/90 text-center transition-colors duration-300">
+      <div className="mt-20 p-8 border-t border-slate-200 dark:border-zinc-900/90 text-center transition-colors duration-300">
         <p className="text-xs text-slate-500 dark:text-zinc-600">
           Copyright © 2026 INTELLEON. All Rights Reserved.
         </p>

@@ -1,17 +1,37 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
-  const [activeSection, setActiveSection] = useState("know-intelleon");
+  const pathname = usePathname();
+
+  const [activeSection, setActiveSection] = useState(() => {
+    if (pathname?.startsWith("/services")) return "what-we-do";
+    if (pathname?.startsWith("/products")) return "our-products";
+    return "home";
+  });
 
   useEffect(() => {
+    // Lock active section on subpages without running scroll tracking
+    if (pathname?.startsWith("/services")) {
+      setActiveSection("what-we-do");
+      return;
+    }
+
+    if (pathname?.startsWith("/products")) {
+      setActiveSection("our-products");
+      return;
+    }
+
     const sections = [
       "know-intelleon",
       "what-we-do",
       "our-products",
       "contact",
     ];
+
     const handleScroll = () => {
       const isAtBottom =
         window.innerHeight + Math.round(window.scrollY) >=
@@ -23,6 +43,14 @@ export default function Sidebar() {
       }
 
       const threshold = 200;
+      const firstEl = document.getElementById(sections[0]);
+
+      // If user is scrolled above the first section (Hero / top area)
+      if (firstEl && firstEl.getBoundingClientRect().top > threshold) {
+        setActiveSection("home");
+        return;
+      }
+
       let current = sections[0];
 
       for (let i = 0; i < sections.length; i++) {
@@ -34,13 +62,14 @@ export default function Sidebar() {
           }
         }
       }
+
       setActiveSection(current);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   const navItems = [
     { id: "know-intelleon", label: "Know INTELLEON" },
@@ -57,11 +86,13 @@ export default function Sidebar() {
       >
         {navItems.map((item) => {
           const isActive = activeSection === item.id;
+          const href = pathname === "/" ? `#${item.id}` : `/#${item.id}`;
+
           return (
-            <a
+            <Link
               key={item.id}
               className="nav-tab group flex flex-col items-start text-sm tracking-wide text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white transition-colors duration-200"
-              href={`#${item.id}`}
+              href={href}
             >
               <span
                 className={`tab-label font-medium transition-colors ${isActive ? "text-slate-900 dark:text-white font-semibold" : "text-slate-500 dark:text-zinc-400"}`}
@@ -71,7 +102,7 @@ export default function Sidebar() {
               <span
                 className={`tab-indicator h-[2px] mt-1 transition-all duration-300 ${isActive ? "w-8 bg-slate-900 dark:bg-white" : "w-0 bg-slate-900 dark:bg-white group-hover:w-8"}`}
               ></span>
-            </a>
+            </Link>
           );
         })}
       </nav>
