@@ -40,7 +40,18 @@ export default function Contact() {
 
   return (
     <section className="pt-8 sm:pt-10 pb-2 sm:pb-4 lg:pb-6 scroll-mt-20 md:scroll-mt-24" id="contact">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      <div className="mb-10 sm:mb-12">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black uppercase tracking-wider flex items-baseline gap-3">
+          <span className="text-slate-900 dark:text-white transition-colors duration-300">
+            GET
+          </span>
+          <span className="[-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent lowercase text-3xl sm:text-4xl transition-all duration-300">
+            in TOUCH
+          </span>
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start max-w-md mx-auto lg:max-w-none lg:mx-0">
         {/* Left Info Column */}
         <div className="lg:col-span-5 space-y-6 sm:space-y-8">
           <div className="flex items-center gap-2 group tracking-widest">
