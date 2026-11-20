@@ -4,11 +4,11 @@ export default function SlideThree(props: { currentSlide: number }) {
   return (
     <div
       aria-hidden={props.currentSlide !== 3}
-      className={`hero-slide col-start-1 row-start-1 w-full flex items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 3 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
+      className={`hero-slide col-start-1 row-start-1 w-full flex items-start lg:items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 3 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         <div className="lg:col-span-7 flex flex-col items-start gap-4">
-          <div className="font-tech text-orange-600 dark:text-orange-500 text-xs sm:text-sm uppercase tracking-[0.25em] flex items-center gap-2">
+          <div className="font-tech h-7 lg:h-auto text-orange-600 dark:text-orange-500 text-xs sm:text-sm uppercase tracking-[0.25em] flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>{" "}
             Hospitality &amp; Retail POS
           </div>

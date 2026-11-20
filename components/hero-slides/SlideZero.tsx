@@ -4,7 +4,7 @@ export default function SlideZero(props: { currentSlide: number }) {
   return (
     <div
       aria-hidden={props.currentSlide !== 0}
-      className={`hero-slide col-start-1 row-start-1 w-full flex items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 0 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
+      className={`hero-slide col-start-1 row-start-1 w-full flex items-start xl:items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 0 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 sm:gap-8 xl:gap-10 items-center w-full">
         <div className="xl:col-span-6 flex justify-center order-2 xl:order-1 relative py-6">
@@ -52,8 +52,8 @@ export default function SlideZero(props: { currentSlide: number }) {
             </div>
           </div>
         </div>
-        <div className="xl:col-span-6 flex flex-col items-start gap-5 sm:gap-6 order-1 xl:order-2">
-          <div className="font-tech text-cyan-600 dark:text-brandCyan text-base sm:text-xl 2xl:text-2xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
+        <div className="xl:col-span-6 flex flex-col items-start gap-4 xl:gap-6 order-1 xl:order-2">
+          <div className="font-tech h-7 xl:h-auto flex items-center text-cyan-600 dark:text-brandCyan text-base sm:text-xl 2xl:text-2xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
             Intelligence: ON_
           </div>
           <h1 className="text-2xl sm:text-4xl md:text-3xl 2xl:text-4xl font-heading font-medium md:font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">

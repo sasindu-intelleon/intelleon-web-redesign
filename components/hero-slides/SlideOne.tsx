@@ -2,11 +2,11 @@ export default function SlideOne(props: { currentSlide: number }) {
   return (
     <div
       aria-hidden={props.currentSlide !== 1}
-      className={`hero-slide col-start-1 row-start-1 w-full flex items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 1 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
+      className={`hero-slide col-start-1 row-start-1 w-full flex items-start lg:items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 1 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
-        <div className="lg:col-span-6 flex flex-col items-start gap-5">
-          <div className="font-tech text-cyan-600 dark:text-brandCyan text-sm uppercase tracking-[0.25em] flex items-center gap-2">
+        <div className="lg:col-span-6 flex flex-col items-start gap-4 lg:gap-5">
+          <div className="font-tech h-7 lg:h-auto text-cyan-600 dark:text-brandCyan text-sm uppercase tracking-[0.25em] flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-cyan-600 dark:bg-brandCyan animate-pulse"></span>
             Technology Stack &amp; Scope
           </div>
