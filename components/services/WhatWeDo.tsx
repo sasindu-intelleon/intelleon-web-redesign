@@ -70,7 +70,7 @@ export default function WhatWeDo() {
       </div>
 
       {/* Main Grid View */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 relative z-10">
         {servicesList.map((s) => (
           <ServiceCard
             key={s.key}

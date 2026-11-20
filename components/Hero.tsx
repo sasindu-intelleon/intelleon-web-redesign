@@ -18,7 +18,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className=" flex flex-col justify-center relative pt-8 md:pt-4 overflow-hidden">
+    <section className=" flex flex-col justify-center relative pt-0 md:pt-4 overflow-hidden">
       <div className="relative w-full min-h-[690px] md:min-h-[740px] lg:min-h-[690px] xl:min-h-[500px] flex items-center">
         <SlideZero currentSlide={currentSlide} />
         <SlideOne currentSlide={currentSlide} />

@@ -39,7 +39,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-10 pb-12 scroll-mt-24" id="contact">
+    <section className="pt-10 pb-8 scroll-mt-24" id="contact">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Info Column */}
         <div className="lg:col-span-5 space-y-8">
