@@ -45,8 +45,8 @@ export default function Contact() {
           <span className="text-slate-900 dark:text-white transition-colors duration-300">
             GET
           </span>
-          <span className="[-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent lowercase text-3xl sm:text-4xl transition-all duration-300">
-            in TOUCH
+          <span className="[-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent text-3xl sm:text-4xl transition-all duration-300">
+            <span className="lowercase">in</span> TOUCH
           </span>
         </h2>
       </div>
