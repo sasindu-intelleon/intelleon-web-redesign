@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function SlideThree(props: { currentSlide: number }) {
   return (
     <div
-      className={`hero-slide w-full transition-all duration-700 absolute ${props.currentSlide === 3 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
+      aria-hidden={props.currentSlide !== 3}
+      className={`hero-slide col-start-1 row-start-1 w-full flex items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 3 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         <div className="lg:col-span-7 flex flex-col items-start gap-4">
@@ -47,7 +48,7 @@ export default function SlideThree(props: { currentSlide: number }) {
           </div>
         </div>
         <div className="lg:col-span-5 flex justify-center items-center py-4 relative">
-          <div className="relative w-64 h-64 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 xl:w-72 xl:h-72 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
             <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgdZgDsAEVltUuV9WU-jfLmFqtMq65g5MtH0p-BTqfgVt40j0x_xEr6CxwG11Fpbt2J4AuAOWjSvZm7Gj0vyzYG_zmBw03IYZFtD80D6WWnzWhOdx_zS6shogpgs8ixPP51wxrbjCXwxG6pzxfpuB1uIUWO6RsFonhxfNIOInc1qt5zZtxJqIgj2TZcsANnBxeHpxwVJq9McxCfGlJUtN9jVjw_vDTykPhgHVsVgqx"
               alt="NOM POS - Enterprise Point of Sale Software Solution by INTELLEON"

@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function SlideTwo(props: { currentSlide: number }) {
   return (
     <div
-      className={`hero-slide w-full transition-all duration-700 absolute ${props.currentSlide === 2 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
+      aria-hidden={props.currentSlide !== 2}
+      className={`hero-slide col-start-1 row-start-1 w-full flex items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 2 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         <div className="lg:col-span-5 flex flex-col items-center justify-center py-6">
@@ -11,9 +12,9 @@ export default function SlideTwo(props: { currentSlide: number }) {
             <Image
               src="/images/product/organizer_logo.png"
               alt="Organizer - Enterprise Product Logo by INTELLEON"
-              width={260} // responsive : max size : (md:w-65 -> 65 * 4px = 260px)
+              width={260} // max rendered size: 260px (md / xl)
               height={260}
-              className="w-36 h-36 md:w-65 md:h-auto sm:w-44 sm:h-44 object-contain"
+              className="w-36 h-36 sm:w-44 sm:h-44 md:w-[260px] md:h-[260px] lg:w-52 lg:h-52 xl:w-[260px] xl:h-[260px] object-contain"
             />
             <div className="absolute -bottom-6 font-heading font-extrabold text-2xl text-slate-900 dark:text-white tracking-widest uppercase transition-colors duration-300">
               Organizer

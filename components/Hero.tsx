@@ -19,7 +19,13 @@ export default function Hero() {
 
   return (
     <section className=" flex flex-col justify-center relative pt-0 md:pt-4 overflow-hidden">
-      <div className="relative w-full min-h-[690px] md:min-h-[740px] lg:min-h-[690px] xl:min-h-[500px] flex items-center">
+      {/*
+        All slides are stacked in the same grid cell (row 1 / col 1).
+        The container therefore always takes the height of the TALLEST slide,
+        so every slide has the same height on every device and the layout
+        never jumps when slides change.
+      */}
+      <div className="relative grid w-full xl:min-h-[500px]">
         <SlideZero currentSlide={currentSlide} />
         <SlideOne currentSlide={currentSlide} />
         <SlideTwo currentSlide={currentSlide} />

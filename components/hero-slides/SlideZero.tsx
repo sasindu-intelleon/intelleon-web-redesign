@@ -3,9 +3,10 @@ import Image from "next/image";
 export default function SlideZero(props: { currentSlide: number }) {
   return (
     <div
-      className={`hero-slide w-full transition-all duration-700 absolute ${props.currentSlide === 0 ? "opacity-100 relative z-10" : "opacity-0 pointer-events-none"}`}
+      aria-hidden={props.currentSlide !== 0}
+      className={`hero-slide col-start-1 row-start-1 w-full flex items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 0 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
-      <div className="grid grid-cols-1 xl:grid-cols-12 gap-10 items-center">
+      <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 sm:gap-8 xl:gap-10 items-center w-full">
         <div className="xl:col-span-6 flex justify-center order-2 xl:order-1 relative py-6">
           <div className="relative w-[280px] h-[320px] sm:w-[360px] sm:h-[380px] lg:w-[330px] lg:h-[360px] xl:w-[380px] xl:h-[390px]">
             {/* Top-Right Hexagon */}
@@ -23,7 +24,7 @@ export default function SlideZero(props: { currentSlide: number }) {
             </div>
 
             {/* Top-Left Hexagon */}
-            <div className="absolute left-0 top-14 sm:top-18 lg:top-16 xl:top-20 w-36 sm:w-48 lg:w-44 xl:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
+            <div className="absolute left-0 top-14 sm:top-[4.5rem] lg:top-16 xl:top-20 w-36 sm:w-48 lg:w-44 xl:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMYhJKo85IwzrgjQ5i761TnyMlUhvoRVZM_DPERkBLvXYoegTX44REh_bOIvZ0FZApThS4GG9xgxwsZbZ_Mz2fhxoJytVZ-2jVKED1LHhdr1yT84x_QGqvOvm_RhQtHCbsGhJbeY8E-pWIEFug4wUCpN53TN4m53Z1VZv5CHpQfTMvbGj1THC4GcIniIUVJzTVDuK1YvUedazCS2XCb-gEFxD5NlqqKB4F4u-lYrg"
@@ -51,11 +52,11 @@ export default function SlideZero(props: { currentSlide: number }) {
             </div>
           </div>
         </div>
-        <div className="xl:col-span-6 flex flex-col items-start gap-6 order-1 xl:order-2">
-          <div className="font-tech text-cyan-600 dark:text-brandCyan text-md sm:text-1xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
+        <div className="xl:col-span-6 flex flex-col items-start gap-5 sm:gap-6 order-1 xl:order-2">
+          <div className="font-tech text-cyan-600 dark:text-brandCyan text-base sm:text-xl 2xl:text-2xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
             Intelligence: ON_
           </div>
-          <h1 className="text-1xl sm:text-4xl md:text-3xl font-heading font-medium md:font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">
+          <h1 className="text-2xl sm:text-4xl md:text-3xl 2xl:text-4xl font-heading font-medium md:font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">
             We are about Engineering Smart, Scalable, Future-Ready Technology
             for Data Driven Ecosystems!
           </h1>
