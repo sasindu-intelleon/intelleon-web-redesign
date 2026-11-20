@@ -47,8 +47,8 @@ export default function SlideThree(props: { currentSlide: number }) {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-5 flex justify-center items-center py-2 xl:py-3 2xl:py-4 relative">
-          <div className="relative w-52 h-52 sm:w-60 sm:h-60 xl:w-60 xl:h-60 2xl:w-72 2xl:h-72 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
+        <div className="lg:col-span-5 flex justify-center items-center py-3 sm:py-5 xl:py-3 2xl:py-4 relative">
+          <div className="relative w-72 h-56 sm:w-80 sm:h-64 md:w-80 md:h-64 lg:w-56 lg:h-56 xl:w-60 xl:h-60 2xl:w-72 2xl:h-72 rounded-2xl overflow-hidden border-2 border-orange-500/40 bg-white dark:bg-zinc-950 p-2 shadow-xl dark:shadow-2xl flex items-center justify-center">
             <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgdZgDsAEVltUuV9WU-jfLmFqtMq65g5MtH0p-BTqfgVt40j0x_xEr6CxwG11Fpbt2J4AuAOWjSvZm7Gj0vyzYG_zmBw03IYZFtD80D6WWnzWhOdx_zS6shogpgs8ixPP51wxrbjCXwxG6pzxfpuB1uIUWO6RsFonhxfNIOInc1qt5zZtxJqIgj2TZcsANnBxeHpxwVJq9McxCfGlJUtN9jVjw_vDTykPhgHVsVgqx"
               alt="NOM POS - Enterprise Point of Sale Software Solution by INTELLEON"

@@ -8,16 +8,16 @@ export default function SlideTwo(props: { currentSlide: number }) {
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         {/* Image: below the text on mobile/tablet, left column from lg up */}
-        <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col items-center justify-center py-2 sm:py-3 xl:py-2 2xl:py-6">
-          <div className="relative flex items-center justify-center">
+        <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col items-center justify-center py-4 sm:py-5 xl:py-2 2xl:py-6">
+          <div className="relative flex flex-col items-center justify-center pb-6 sm:pb-8">
             <Image
               src="/images/product/organizer_logo.png"
               alt="Organizer - Enterprise Product Logo by INTELLEON"
               width={260} // max rendered size: 260px (md / xl)
               height={260}
-              className="w-36 h-36 sm:w-44 sm:h-44 md:w-[220px] md:h-[220px] lg:w-44 lg:h-44 xl:w-[210px] xl:h-[210px] 2xl:w-[260px] 2xl:h-[260px] object-contain"
+              className="w-48 h-48 sm:w-56 sm:h-56 md:w-[220px] md:h-[220px] lg:w-44 lg:h-44 xl:w-[210px] xl:h-[210px] 2xl:w-[260px] 2xl:h-[260px] object-contain"
             />
-            <div className="absolute -bottom-5 xl:-bottom-5 2xl:-bottom-6 font-heading font-extrabold text-xl 2xl:text-2xl text-slate-900 dark:text-white tracking-widest uppercase transition-colors duration-300">
+            <div className="absolute bottom-0 font-heading font-extrabold text-xl sm:text-2xl text-slate-900 dark:text-white tracking-widest uppercase transition-colors duration-300">
               Organizer
             </div>
           </div>

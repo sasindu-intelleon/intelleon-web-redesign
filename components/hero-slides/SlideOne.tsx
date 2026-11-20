@@ -34,30 +34,30 @@ export default function SlideOne(props: { currentSlide: number }) {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-6 relative flex flex-wrap items-center justify-center lg:justify-end gap-2.5 sm:gap-3 xl:gap-3 2xl:gap-4 p-2 sm:p-4 font-heading font-bold select-none">
+        <div className="lg:col-span-6 relative flex flex-wrap items-center justify-center lg:justify-end gap-3 sm:gap-3.5 xl:gap-3 2xl:gap-4 p-3 sm:p-4 font-heading font-bold select-none">
           <div className="absolute inset-0 bg-cyan-500/5 dark:bg-brandCyan/5 rounded-3xl blur-2xl pointer-events-none"></div>
-          <span className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-slate-800 dark:text-white/90 transition-colors px-3 py-1.5 sm:px-4 sm:py-2 bg-white dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
+          <span className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl text-slate-800 dark:text-white/90 transition-colors px-4 py-2 sm:px-4 sm:py-2 bg-white dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
             MOBILE
           </span>
-          <span className="text-xl sm:text-3xl xl:text-4xl 2xl:text-5xl text-cyan-600 dark:text-brandCyan [-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent px-3 py-1.5 sm:px-4 sm:py-2">
+          <span className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl text-cyan-600 dark:text-brandCyan [-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent px-4 py-2 sm:px-4 sm:py-2">
             UI/UX
           </span>
-          <span className="text-sm sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-700 dark:text-zinc-300 px-3 py-1.5 sm:px-4 sm:py-2 bg-white dark:bg-zinc-900/60 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
+          <span className="text-base sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-700 dark:text-zinc-300 px-4 py-2 sm:px-4 sm:py-2 bg-white dark:bg-zinc-900/60 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
             ENTERPRISE
           </span>
-          <span className="text-base sm:text-2xl xl:text-3xl 2xl:text-4xl text-slate-900 dark:text-white px-2.5 py-1 sm:px-3 sm:py-1.5 bg-gradient-to-r from-cyan-500/10 dark:from-brandCyan/20 to-transparent border border-cyan-500/20 dark:border-brandCyan/30 rounded-xl shadow-sm">
+          <span className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-slate-900 dark:text-white px-3.5 py-1.5 sm:px-3 sm:py-1.5 bg-gradient-to-r from-cyan-500/10 dark:from-brandCyan/20 to-transparent border border-cyan-500/20 dark:border-brandCyan/30 rounded-xl shadow-sm">
             DESKTOP
           </span>
-          <span className="text-xl sm:text-3xl xl:text-4xl 2xl:text-5xl font-black text-slate-900 dark:text-white">
+          <span className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl font-black text-slate-900 dark:text-white px-2 py-1">
             WEB
           </span>
-          <span className="text-xs sm:text-lg xl:text-xl 2xl:text-2xl text-cyan-700 dark:text-brandCyan border border-cyan-500/30 dark:border-brandCyan/40 rounded-full px-4 py-1 sm:px-5 sm:py-1.5 bg-cyan-500/10 dark:bg-brandCyan/10">
+          <span className="text-sm sm:text-lg xl:text-xl 2xl:text-2xl text-cyan-700 dark:text-brandCyan border border-cyan-500/30 dark:border-brandCyan/40 rounded-full px-5 py-2 sm:px-5 sm:py-1.5 bg-cyan-500/10 dark:bg-brandCyan/10">
             API
           </span>
-          <span className="text-sm sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 dark:text-zinc-400 px-2.5 py-1 sm:px-3 sm:py-1">
+          <span className="text-base sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 dark:text-zinc-400 px-3.5 py-1.5 sm:px-3 sm:py-1">
             SAAS
           </span>
-          <span className="text-sm sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-800 dark:text-white/80 border border-slate-300 dark:border-white/20 rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 bg-white/50 dark:bg-transparent">
+          <span className="text-base sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-800 dark:text-white/80 border border-slate-300 dark:border-white/20 rounded-xl px-4 py-2 sm:px-4 sm:py-2 bg-white/50 dark:bg-transparent">
             E-COMMERCE
           </span>
         </div>
