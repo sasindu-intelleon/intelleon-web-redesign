@@ -25,7 +25,7 @@ export default function Hero() {
         so every slide has the same height on every device and the layout
         never jumps when slides change.
       */}
-      <div className="relative grid w-full xl:min-h-[460px] 2xl:min-h-[460px]">
+      <div className="relative grid w-full xl:min-h-[460px] 2xl:min-h-[500px]">
         <SlideZero currentSlide={currentSlide} />
         <SlideOne currentSlide={currentSlide} />
         <SlideTwo currentSlide={currentSlide} />
