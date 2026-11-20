@@ -21,7 +21,7 @@ const servicesList = [
   },
   {
     key: "desktop",
-    icon: "fa-solid fa-gear",
+    icon: "fa-solid fa-desktop",
     title: "Desktop Applications",
     desc: "We provide custom desktop application development services tailored to meet specific needs.",
   },
@@ -33,7 +33,7 @@ const servicesList = [
   },
   {
     key: "uiux",
-    icon: "fa-regular fa-newspaper",
+    icon: "fa-solid fa-pen-ruler",
     title: "UI/UX Design",
     desc: "We specialize in UI/UX engineering that transforms digital experiences into intuitive journeys.",
   },
