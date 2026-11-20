@@ -48,15 +48,17 @@ export default function KnowIntelleon() {
           </p>
         </div>
         {/* <!-- Geometric Framed Skyscraper Visual Feature --> */}
-        <div className="relative w-72 sm:w-80 aspect-square shadow-blue-200 dark:shadow-blue-600/20 bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-sm overflow-hidden p-2 group shadow-xl dark:shadow-2xl transition-colors duration-300">
-          {/* Background Architecture Visual */}
-          <Image
-            src="/images/img_know_intelleon.webp"
-            alt="INTELLEON - Modern Enterprise Solutions"
-            width={800}
-            height={600}
-            className="w-full h-full object-cover brightness-100 contrast-105 dark:brightness-90 group-hover:scale-105 transition-all duration-700"
-          />
+        <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
+          <div className="relative w-72 sm:w-80 aspect-square shadow-blue-200 dark:shadow-blue-600/20 bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-sm overflow-hidden p-2 group shadow-xl dark:shadow-2xl transition-colors duration-300">
+            {/* Background Architecture Visual */}
+            <Image
+              src="/images/img_know_intelleon.webp"
+              alt="INTELLEON - Modern Enterprise Solutions"
+              width={800}
+              height={600}
+              className="w-full h-full object-cover brightness-100 contrast-105 dark:brightness-90 group-hover:scale-105 transition-all duration-700"
+            />
+          </div>
         </div>
       </div>
     </section>
