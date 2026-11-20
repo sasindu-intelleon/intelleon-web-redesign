@@ -7,10 +7,10 @@ export default function SlideZero(props: { currentSlide: number }) {
       className={`hero-slide col-start-1 row-start-1 w-full flex items-start xl:items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 0 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 sm:gap-8 xl:gap-10 items-center w-full">
-        <div className="xl:col-span-6 flex justify-center order-2 xl:order-1 relative py-6">
-          <div className="relative w-[280px] h-[320px] sm:w-[360px] sm:h-[380px] lg:w-[330px] lg:h-[360px] xl:w-[380px] xl:h-[390px]">
+        <div className="xl:col-span-6 flex justify-center order-2 xl:order-1 relative py-2 sm:py-4 xl:py-2 2xl:py-6">
+          <div className="relative w-[280px] h-[320px] sm:w-[360px] sm:h-[380px] lg:w-[330px] lg:h-[360px] xl:w-[330px] xl:h-[340px] 2xl:w-[380px] 2xl:h-[390px]">
             {/* Top-Right Hexagon */}
-            <div className="absolute right-2 top-0 w-32 sm:w-44 lg:w-40 xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-tr from-cyan-500/50 to-slate-400/40 dark:to-white/40">
+            <div className="absolute right-2 top-0 w-32 sm:w-44 lg:w-40 xl:w-42 2xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-tr from-cyan-500/50 to-slate-400/40 dark:to-white/40">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfdKgBrXv5MW0NfoEsBbYPbPZNsgWkfBpCZuzhZ6n5sw-yj4sosdn3PahQ1nKKKbmlbUsNGF1-PnOv_eHEK8cwNg-7gGhxnk6FiA22MQnhvHDpvpYxv4cRqGpQXpNSX36C2AaYwvNE0dX4HCZZKhnsikfM9YgwbITKZw-OLADjVrOY80SAvlau4RwD8OWJLL-HNZy701ciSvCp4B14XnPDbTmoZYSxVld8QTAFkuVA"
@@ -24,7 +24,7 @@ export default function SlideZero(props: { currentSlide: number }) {
             </div>
 
             {/* Top-Left Hexagon */}
-            <div className="absolute left-0 top-14 sm:top-[4.5rem] lg:top-16 xl:top-20 w-36 sm:w-48 lg:w-44 xl:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
+            <div className="absolute left-0 top-14 sm:top-[4.5rem] lg:top-16 xl:top-16 2xl:top-20 w-36 sm:w-48 lg:w-44 xl:w-46 2xl:w-52 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-bl from-brandCyan to-slate-300/30 dark:to-white/30 shadow-xl dark:shadow-2xl">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMYhJKo85IwzrgjQ5i761TnyMlUhvoRVZM_DPERkBLvXYoegTX44REh_bOIvZ0FZApThS4GG9xgxwsZbZ_Mz2fhxoJytVZ-2jVKED1LHhdr1yT84x_QGqvOvm_RhQtHCbsGhJbeY8E-pWIEFug4wUCpN53TN4m53Z1VZv5CHpQfTMvbGj1THC4GcIniIUVJzTVDuK1YvUedazCS2XCb-gEFxD5NlqqKB4F4u-lYrg"
@@ -38,7 +38,7 @@ export default function SlideZero(props: { currentSlide: number }) {
             </div>
 
             {/* Bottom-Right Hexagon */}
-            <div className="absolute right-4 bottom-0 w-32 sm:w-44 lg:w-40 xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-br from-slate-400/40 dark:to-white/40 to-cyan-500/40">
+            <div className="absolute right-4 bottom-0 w-32 sm:w-44 lg:w-40 xl:w-42 2xl:w-48 aspect-[0.866] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] p-0.5 bg-gradient-to-br from-slate-400/40 dark:to-white/40 to-cyan-500/40">
               <div className="w-full h-full [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)] bg-slate-100 dark:bg-zinc-900 overflow-hidden">
                 <Image
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1BJ9mwidqt5eEF0m1jOist4JUEgdyNu2Ggj6iViAN5NWLvV8r8z4JwVAqcFF2xryy1-_FENAkyCDlfQDLHSzm4K1A_N1SzTWdmGcekTnO5FW5zDZlP3eTjLOMSrZiptHeZe6aGjAU_496_CRWK_KW1D_ctpSUs4I_7goxY5zOkqCvh8R5jys3Kl3TUxROXzg5WYV7mtuLiYDEHK_XnLYM7A5w-fsA_OwyOobKxZc-"
@@ -52,11 +52,11 @@ export default function SlideZero(props: { currentSlide: number }) {
             </div>
           </div>
         </div>
-        <div className="xl:col-span-6 flex flex-col items-start gap-4 xl:gap-6 order-1 xl:order-2">
-          <div className="font-tech h-7 xl:h-auto flex items-center text-cyan-600 dark:text-brandCyan text-base sm:text-xl 2xl:text-2xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
+        <div className="xl:col-span-6 flex flex-col items-start gap-3.5 xl:gap-4 2xl:gap-6 order-1 xl:order-2">
+          <div className="font-tech h-7 xl:h-auto flex items-center text-cyan-600 dark:text-brandCyan text-base sm:text-lg 2xl:text-2xl font-semibold tracking-widest drop-shadow-[0_0_14px_rgba(18,184,255,0.45)]">
             Intelligence: ON_
           </div>
-          <h1 className="text-2xl sm:text-4xl md:text-3xl 2xl:text-4xl font-heading font-medium md:font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">
+          <h1 className="text-2xl sm:text-3xl xl:text-3xl 2xl:text-4xl font-heading font-medium md:font-extrabold text-slate-900 dark:text-white leading-tight md:leading-[1.2] transition-colors duration-300">
             We are about Engineering Smart, Scalable, Future-Ready Technology
             for Data Driven Ecosystems!
           </h1>

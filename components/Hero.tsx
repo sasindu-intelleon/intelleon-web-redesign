@@ -18,14 +18,14 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className=" flex flex-col justify-center relative pt-0 md:pt-4 overflow-hidden">
+    <section className="flex flex-col justify-center relative pt-0 md:pt-1 overflow-hidden">
       {/*
         All slides are stacked in the same grid cell (row 1 / col 1).
         The container therefore always takes the height of the TALLEST slide,
         so every slide has the same height on every device and the layout
         never jumps when slides change.
       */}
-      <div className="relative grid w-full xl:min-h-[500px]">
+      <div className="relative grid w-full xl:min-h-[460px] 2xl:min-h-[460px]">
         <SlideZero currentSlide={currentSlide} />
         <SlideOne currentSlide={currentSlide} />
         <SlideTwo currentSlide={currentSlide} />
@@ -33,7 +33,7 @@ export default function Hero() {
       </div>
 
       {/* Indicators */}
-      <div className="flex items-center gap-2 pt-6 relative z-30">
+      <div className="flex items-center gap-2 pt-3 sm:pt-4 relative z-30">
         {[0, 1, 2, 3].map((idx) => (
           <button
             key={idx}
