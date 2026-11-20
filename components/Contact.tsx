@@ -39,10 +39,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-10 pb-8 scroll-mt-24" id="contact">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+    <section className="pt-8 sm:pt-10 pb-2 sm:pb-4 lg:pb-6 scroll-mt-20 md:scroll-mt-24" id="contact">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         {/* Left Info Column */}
-        <div className="lg:col-span-5 space-y-8">
+        <div className="lg:col-span-5 space-y-6 sm:space-y-8">
           <div className="flex items-center gap-2 group tracking-widest">
             <Image
               src={logoImg}
@@ -51,24 +51,24 @@ export default function Contact() {
             />
           </div>
 
-          <div className="space-y-4 pt-4 text-sm sm:text-base text-slate-600 dark:text-zinc-300 transition-colors duration-300">
-            <div className="flex items-center gap-4">
+          <div className="space-y-3 sm:space-y-4 pt-2 sm:pt-4 text-sm sm:text-base text-slate-600 dark:text-zinc-300 transition-colors duration-300">
+            <div className="flex items-center gap-3.5 sm:gap-4">
               <div className="w-8 flex items-center text-slate-400 dark:text-zinc-400">
                 <i className="fa-regular fa-envelope text-lg"></i>
               </div>
               <a
-                className="hover:text-slate-900 dark:hover:text-white transition"
+                className="hover:text-slate-900 dark:hover:text-white transition py-1"
                 href="mailto:info@intelleon.com"
               >
                 info@intelleon.com
               </a>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3.5 sm:gap-4">
               <div className="w-8 flex items-center text-slate-400 dark:text-zinc-400">
                 <i className="fa-solid fa-phone text-base"></i>
               </div>
               <a
-                className="hover:text-slate-900 dark:hover:text-white transition"
+                className="hover:text-slate-900 dark:hover:text-white transition py-1"
                 href="tel:+94777266411"
               >
                 +94 777 266 411
@@ -76,7 +76,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <p className="text-xs text-slate-500 dark:text-zinc-500 leading-relaxed max-w-sm pt-2 transition-colors duration-300">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-zinc-500 leading-relaxed max-w-sm pt-1 sm:pt-2 transition-colors duration-300">
             Ready to engineer your future-ready digital ecosystem? Get in touch
             with our specialist engineering consultants today.
           </p>
@@ -123,7 +123,7 @@ export default function Contact() {
             <div>
               <input
                 name="name"
-                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
+                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3 sm:py-3.5 text-base sm:text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
                 placeholder="Name *"
                 required
                 type="text"
@@ -132,7 +132,7 @@ export default function Contact() {
             <div>
               <input
                 name="phone"
-                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
+                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3 sm:py-3.5 text-base sm:text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
                 placeholder="Mobile / Telephone"
                 type="tel"
               />
@@ -140,7 +140,7 @@ export default function Contact() {
             <div>
               <input
                 name="email"
-                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
+                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3 sm:py-3.5 text-base sm:text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition shadow-sm"
                 placeholder="Email *"
                 required
                 type="email"
@@ -149,14 +149,14 @@ export default function Contact() {
             <div>
               <textarea
                 name="message"
-                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3.5 text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition resize-none shadow-sm"
+                className="w-full bg-slate-100 dark:bg-inputBg border border-slate-300 dark:border-zinc-800 rounded-lg px-4 py-3 sm:py-3.5 text-base sm:text-sm text-slate-900 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-none focus:border-slate-500 dark:focus:border-zinc-500 transition resize-none shadow-sm"
                 placeholder="Message"
                 rows={5}
               ></textarea>
             </div>
-            <div className="flex justify-end pt-2">
+            <div className="flex sm:justify-end pt-2">
               <button
-                className="px-8 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide bg-slate-900 text-white dark:bg-zinc-800 dark:text-zinc-200 border border-slate-900 dark:border-zinc-700 hover:bg-slate-800 dark:hover:bg-zinc-700 hover:text-white transition duration-200 shadow-md disabled:opacity-50"
+                className="w-full sm:w-auto px-8 py-3 sm:py-2.5 rounded-full text-sm font-semibold tracking-wide bg-slate-900 text-white dark:bg-zinc-800 dark:text-zinc-200 border border-slate-900 dark:border-zinc-700 hover:bg-slate-800 dark:hover:bg-zinc-700 hover:text-white transition duration-200 shadow-md disabled:opacity-50"
                 type="submit"
                 disabled={isPending}
               >
@@ -174,12 +174,73 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* Copyright Footer */}
-      <div className="mt-20 pt-8 border-t border-slate-200 dark:border-zinc-900/90 text-center transition-colors duration-300">
-        <p className="text-xs text-slate-500 dark:text-zinc-600">
-          Copyright © 2026 INTELLEON. All Rights Reserved.
-        </p>
-      </div>
+      {/* Responsive Industry-Standard Footer */}
+      <footer className="mt-12 sm:mt-16 lg:mt-20 pt-6 sm:pt-8 border-t border-slate-200 dark:border-zinc-800/80 transition-colors duration-300">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-6">
+          {/* Brand & Copyright */}
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left order-2 sm:order-1">
+            <span className="text-xs font-medium text-slate-600 dark:text-zinc-400">
+              © {new Date().getFullYear()} INTELLEON. All Rights Reserved.
+            </span>
+            <span className="hidden sm:inline text-slate-300 dark:text-zinc-700">•</span>
+            <span className="text-[11px] text-slate-400 dark:text-zinc-500">
+              Engineering Future-Ready Ecosystems
+            </span>
+          </div>
+
+          {/* Social Links on Mobile & Tablet (Where desktop sidebar is hidden) */}
+          <div className="flex lg:hidden items-center gap-3 text-slate-500 dark:text-zinc-400 order-1 sm:order-2">
+            <a
+              aria-label="LinkedIn"
+              className="w-9 h-9 rounded-full border border-slate-300 dark:border-zinc-700/80 flex items-center justify-center hover:border-slate-500 hover:text-slate-900 dark:hover:border-zinc-400 dark:hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/intelleon-io"
+            >
+              <i className="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+            <a
+              aria-label="Facebook"
+              className="w-9 h-9 rounded-full border border-slate-300 dark:border-zinc-700/80 flex items-center justify-center hover:border-slate-500 hover:text-slate-900 dark:hover:border-zinc-400 dark:hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://facebook.com/intelleon.io"
+            >
+              <i className="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a
+              aria-label="X Twitter"
+              className="w-9 h-9 rounded-full border border-slate-300 dark:border-zinc-700/80 flex items-center justify-center hover:border-slate-500 hover:text-slate-900 dark:hover:border-zinc-400 dark:hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://x.com/intelleon"
+            >
+              <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+            <a
+              aria-label="Instagram"
+              className="w-9 h-9 rounded-full border border-slate-300 dark:border-zinc-700/80 flex items-center justify-center hover:border-slate-500 hover:text-slate-900 dark:hover:border-zinc-400 dark:hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/intelleon.io/"
+            >
+              <i className="fa-brands fa-instagram text-xs"></i>
+            </a>
+          </div>
+
+          {/* Back to top smooth scroll */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            aria-label="Back to top"
+            className="group flex items-center gap-1.5 text-xs text-slate-500 dark:text-zinc-500 hover:text-slate-900 dark:hover:text-brandCyan transition-colors cursor-pointer order-3"
+          >
+            <span>Back to top</span>
+            <i className="fa-solid fa-arrow-up text-[10px] group-hover:-translate-y-0.5 transition-transform"></i>
+          </button>
+        </div>
+      </footer>
     </section>
   );
 }

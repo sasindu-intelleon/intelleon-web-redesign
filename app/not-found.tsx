@@ -346,7 +346,7 @@ export default function NotFound() {
       </div>
 
       {/* Copyright Footer */}
-      <div className="mt-20 p-8 border-t border-slate-200 dark:border-zinc-900/90 text-center transition-colors duration-300">
+      <div className="mt-12 sm:mt-16 lg:mt-20 p-6 sm:p-8 border-t border-slate-200 dark:border-zinc-900/90 text-center transition-colors duration-300">
         <p className="text-xs text-slate-500 dark:text-zinc-600">
           Copyright © 2026 INTELLEON. All Rights Reserved.
         </p>

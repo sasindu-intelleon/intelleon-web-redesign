@@ -24,7 +24,7 @@ export default function Home() {
       />
 
       <div
-        className="max-w-7xl mx-auto px-6 pt-24 pb-16 flex relative"
+        className="max-w-7xl mx-auto px-4 sm:px-6 pt-20 md:pt-24 pb-4 sm:pb-8 lg:pb-16 flex relative"
         id="hero"
       >
         <Sidebar />
