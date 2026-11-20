@@ -1,11 +1,30 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+
+// Detail pages map to the sidebar item they belong to
+const getRouteSection = (pathname: string | null) => {
+  if (pathname?.startsWith("/services")) return "what-we-do";
+  if (pathname?.startsWith("/products")) return "our-products";
+  return null;
+};
 
 export default function Sidebar() {
-  const [activeSection, setActiveSection] = useState("know-intelleon");
+  const pathname = usePathname();
+  const routeSection = getRouteSection(pathname);
+  const [activeSection, setActiveSection] = useState(
+    routeSection ?? "know-intelleon",
+  );
 
   useEffect(() => {
+    // On a service/product detail page, keep the parent item active
+    // and skip scroll tracking entirely.
+    if (routeSection) {
+      setActiveSection(routeSection);
+      return;
+    }
+
     const sections = [
       "know-intelleon",
       "what-we-do",
@@ -40,7 +59,7 @@ export default function Sidebar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [routeSection]);
 
   const navItems = [
     { id: "know-intelleon", label: "Know INTELLEON" },
@@ -56,12 +75,12 @@ export default function Sidebar() {
         className="pointer-events-auto flex flex-col gap-8 my-auto"
       >
         {navItems.map((item) => {
-          const isActive = activeSection === item.id;
+          const isActive = (routeSection ?? activeSection) === item.id;
           return (
             <a
               key={item.id}
               className="nav-tab group flex flex-col items-start text-sm tracking-wide text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white transition-colors duration-200"
-              href={`#${item.id}`}
+              href={`/#${item.id}`}
             >
               <span
                 className={`tab-label font-medium transition-colors ${isActive ? "text-slate-900 dark:text-white font-semibold" : "text-slate-500 dark:text-zinc-400"}`}

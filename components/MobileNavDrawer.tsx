@@ -28,28 +28,28 @@ export default function MobileNavDrawer({
       <nav className="flex flex-col items-center gap-6 text-lg font-medium tracking-wide">
         <a
           className="mobile-nav-link text-slate-700 dark:text-zinc-300 hover:text-slate-950 dark:hover:text-white transition-colors"
-          href="#know-intelleon"
+          href="/#know-intelleon"
           onClick={onClose}
         >
           Know INTELLEON
         </a>
         <a
           className="mobile-nav-link text-slate-700 dark:text-zinc-300 hover:text-slate-950 dark:hover:text-white transition-colors"
-          href="#what-we-do"
+          href="/#what-we-do"
           onClick={onClose}
         >
           What We Do
         </a>
         <a
           className="mobile-nav-link text-slate-700 dark:text-zinc-300 hover:text-slate-950 dark:hover:text-white transition-colors"
-          href="#our-products"
+          href="/#our-products"
           onClick={onClose}
         >
           Our Products
         </a>
         <a
           className="mobile-nav-link text-slate-700 dark:text-zinc-300 hover:text-slate-950 dark:hover:text-white transition-colors"
-          href="#contact"
+          href="/#contact"
           onClick={onClose}
         >
           Get in Touch
