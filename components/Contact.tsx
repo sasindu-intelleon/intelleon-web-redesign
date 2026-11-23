@@ -39,14 +39,20 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-8 sm:pt-10 pb-2 sm:pb-4 lg:pb-6 scroll-mt-20 md:scroll-mt-24" id="contact">
+    <section
+      className="pt-8 sm:pt-10 pb-2 sm:pb-4 lg:pb-6 scroll-mt-20 md:scroll-mt-24"
+      id="contact"
+    >
       <div className="mb-10 sm:mb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black uppercase tracking-wider flex items-baseline gap-3">
           <span className="text-slate-900 dark:text-white transition-colors duration-300">
             GET
           </span>
-          <span className="[-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent text-3xl sm:text-4xl transition-all duration-300">
-            <span className="lowercase">in</span> TOUCH
+          <span className="[-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent text-3xl sm:text-4xl transition-all duration-300 lowercase">
+            in
+          </span>
+          <span className="text-transparent uppercase [-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] transition-all duration-300">
+            TOUCH
           </span>
         </h2>
       </div>
@@ -193,7 +199,9 @@ export default function Contact() {
             <span className="text-xs font-medium text-slate-600 dark:text-zinc-400">
               © {new Date().getFullYear()} INTELLEON. All Rights Reserved.
             </span>
-            <span className="hidden sm:inline text-slate-300 dark:text-zinc-700">•</span>
+            <span className="hidden sm:inline text-slate-300 dark:text-zinc-700">
+              •
+            </span>
             <span className="text-[11px] text-slate-400 dark:text-zinc-500">
               Engineering Future-Ready Ecosystems
             </span>

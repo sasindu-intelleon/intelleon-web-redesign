@@ -5,12 +5,12 @@ export default function SlideOne(props: { currentSlide: number }) {
       className={`hero-slide col-start-1 row-start-1 w-full flex items-start lg:items-center transition-[opacity,visibility] duration-700 ${props.currentSlide === 1 ? "opacity-100 visible z-10" : "opacity-0 invisible pointer-events-none"}`}
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
-        <div className="lg:col-span-6 flex flex-col items-start gap-4 lg:gap-5">
-          <div className="font-tech h-7 lg:h-auto text-cyan-600 dark:text-brandCyan text-sm uppercase tracking-[0.25em] flex items-center gap-2">
+        <div className="lg:col-span-6 flex flex-col items-start gap-3.5 xl:gap-4 2xl:gap-5">
+          <div className="font-tech h-7 lg:h-auto text-cyan-600 dark:text-brandCyan text-xs sm:text-sm uppercase tracking-[0.25em] flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-cyan-600 dark:bg-brandCyan animate-pulse"></span>
             Technology Stack &amp; Scope
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-slate-900 dark:text-white leading-tight uppercase transition-colors duration-300">
+          <h2 className="text-2xl sm:text-4xl xl:text-4xl 2xl:text-5xl font-heading font-black text-slate-900 dark:text-white leading-tight uppercase transition-colors duration-300">
             SEAMLESS SOLUTIONS
             <br />
             <span className="[-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent">
@@ -20,44 +20,44 @@ export default function SlideOne(props: { currentSlide: number }) {
               ASPECT
             </span>
           </h2>
-          <p className="text-slate-600 dark:text-zinc-400 text-sm md:text-base leading-relaxed max-w-lg transition-colors duration-300">
+          <p className="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm xl:text-sm 2xl:text-base leading-relaxed max-w-lg transition-colors duration-300">
             Empowering next-generation ventures with full-stack capability
             across modern cloud environments, cross-platform applications, and
             deep system architecture.
           </p>
-          <div className="pt-2">
+          <div className="pt-1 sm:pt-2">
             <a
-              className="px-8 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide bg-cyan-500/10 dark:bg-brandCyan/20 text-cyan-700 dark:text-brandCyan border border-cyan-500/30 dark:border-brandCyan/40 hover:bg-cyan-600 hover:text-white dark:hover:bg-brandCyan dark:hover:text-black transition duration-200 inline-block"
+              className="px-6 py-2 sm:px-8 sm:py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide bg-cyan-500/10 dark:bg-brandCyan/20 text-cyan-700 dark:text-brandCyan border border-cyan-500/30 dark:border-brandCyan/40 hover:bg-cyan-600 hover:text-white dark:hover:bg-brandCyan dark:hover:text-black transition duration-200 inline-block"
               href="#what-we-do"
             >
               Explore Capabilities
             </a>
           </div>
         </div>
-        <div className="lg:col-span-6 relative flex flex-wrap items-center justify-center lg:justify-end gap-3 sm:gap-4 p-4 font-heading font-bold select-none">
+        <div className="lg:col-span-6 relative flex flex-wrap items-center justify-center lg:justify-end gap-3 sm:gap-3.5 xl:gap-3 2xl:gap-4 p-3 sm:p-4 font-heading font-bold select-none">
           <div className="absolute inset-0 bg-cyan-500/5 dark:bg-brandCyan/5 rounded-3xl blur-2xl pointer-events-none"></div>
-          <span className="text-xl sm:text-4xl text-slate-800 dark:text-white/90 transition-colors px-4 py-2 bg-white dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
+          <span className="text-xl sm:text-2xl xl:text-3xl 2xl:text-4xl text-slate-800 dark:text-white/90 transition-colors px-4 py-2 sm:px-4 sm:py-2 bg-white dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
             MOBILE
           </span>
-          <span className="text-2xl sm:text-5xl text-cyan-600 dark:text-brandCyan [-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent px-4 py-2">
+          <span className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl text-cyan-600 dark:text-brandCyan [-webkit-text-stroke:1.5px_#0f172a] dark:[-webkit-text-stroke:1.5px_rgba(255,255,255,0.75)] text-transparent px-4 py-2 sm:px-4 sm:py-2">
             UI/UX
           </span>
-          <span className="text-base sm:text-3xl text-slate-700 dark:text-zinc-300 px-4 py-2 bg-white dark:bg-zinc-900/60 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
+          <span className="text-base sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-700 dark:text-zinc-300 px-4 py-2 sm:px-4 sm:py-2 bg-white dark:bg-zinc-900/60 border border-slate-200 dark:border-zinc-800 rounded-xl shadow-sm">
             ENTERPRISE
           </span>
-          <span className="text-xl sm:text-4xl text-slate-900 dark:text-white px-3 py-1.5 bg-gradient-to-r from-cyan-500/10 dark:from-brandCyan/20 to-transparent border border-cyan-500/20 dark:border-brandCyan/30 rounded-xl shadow-sm">
+          <span className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-slate-900 dark:text-white px-3.5 py-1.5 sm:px-3 sm:py-1.5 bg-gradient-to-r from-cyan-500/10 dark:from-brandCyan/20 to-transparent border border-cyan-500/20 dark:border-brandCyan/30 rounded-xl shadow-sm">
             DESKTOP
           </span>
-          <span className="text-2xl sm:text-5xl font-black text-slate-900 dark:text-white">
+          <span className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl font-black text-slate-900 dark:text-white px-2 py-1">
             WEB
           </span>
-          <span className="text-base sm:text-2xl text-cyan-700 dark:text-brandCyan border border-cyan-500/30 dark:border-brandCyan/40 rounded-full px-5 py-1.5 bg-cyan-500/10 dark:bg-brandCyan/10">
+          <span className="text-sm sm:text-lg xl:text-xl 2xl:text-2xl text-cyan-700 dark:text-brandCyan border border-cyan-500/30 dark:border-brandCyan/40 rounded-full px-5 py-2 sm:px-5 sm:py-1.5 bg-cyan-500/10 dark:bg-brandCyan/10">
             API
           </span>
-          <span className="text-base sm:text-3xl text-slate-600 dark:text-zinc-400 px-3 py-1">
+          <span className="text-base sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-600 dark:text-zinc-400 px-3.5 py-1.5 sm:px-3 sm:py-1">
             SAAS
           </span>
-          <span className="text-base sm:text-3xl text-slate-800 dark:text-white/80 border border-slate-300 dark:border-white/20 rounded-xl px-4 py-2 bg-white/50 dark:bg-transparent">
+          <span className="text-base sm:text-xl xl:text-2xl 2xl:text-3xl text-slate-800 dark:text-white/80 border border-slate-300 dark:border-white/20 rounded-xl px-4 py-2 sm:px-4 sm:py-2 bg-white/50 dark:bg-transparent">
             E-COMMERCE
           </span>
         </div>
