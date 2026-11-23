@@ -51,9 +51,9 @@ export default function Contact() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start max-w-md mx-auto lg:max-w-none lg:mx-0">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start max-w-md md:max-w-none mx-auto md:mx-0">
         {/* Left Info Column */}
-        <div className="lg:col-span-5 space-y-6 sm:space-y-8">
+        <div className="md:col-span-5 space-y-6 sm:space-y-8">
           <div className="flex items-center gap-2 group tracking-widest">
             <Image
               src={logoImg}
@@ -94,7 +94,7 @@ export default function Contact() {
         </div>
 
         {/* Right Form Column */}
-        <div className="lg:col-span-7">
+        <div className="md:col-span-7">
           <form className="space-y-4" onSubmit={handleSubmit}>
             {success && (
               <div className="mb-4 p-4 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-cyan-500/40 shadow-xl transition-all duration-300">
