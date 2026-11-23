@@ -23,7 +23,7 @@ export default function OurProducts() {
           subtitle="Restaurant Management System"
           categoryColor="text-orange-500"
           imageBg="https://lh3.googleusercontent.com/aida-public/AB6AXuCgdZgDsAEVltUuV9WU-jfLmFqtMq65g5MtH0p-BTqfgVt40j0x_xEr6CxwG11Fpbt2J4AuAOWjSvZm7Gj0vyzYG_zmBw03IYZFtD80D6WWnzWhOdx_zS6shogpgs8ixPP51wxrbjCXwxG6pzxfpuB1uIUWO6RsFonhxfNIOInc1qt5zZtxJqIgj2TZcsANnBxeHpxwVJq9McxCfGlJUtN9jVjw_vDTykPhgHVsVgqx"
-          logoSrc="./images/product/nom_logo.png"
+          logoSrc="/images/product/nom_logo.png"
           href="/products/nom"
           altText="Restaurant Modern POS Touch Terminal"
         />
@@ -34,7 +34,7 @@ export default function OurProducts() {
           subtitle="Task & Contact Management System"
           categoryColor="text-amber-500"
           imageBg="https://lh3.googleusercontent.com/aida-public/AB6AXuBuAwW-nJmiHxgxU6xLpdD66MDnzdmUJNYVla5smTwNVjJersioXYNJRTMh4aGvuWT5qb2OJf5fU-BUcGfCcME4-bda1IsFDX9_DkfnUX8AE8nyd3hwZsF9I8zC-r_Qi8g-UtBcfsEZJKDdzOi0D_2dv6Kl8VYWnYVn7897Hhxh1igUt6n2R4MSr6Q9ILzl0iS3c7dFfEQW6YpT-8os0QMcW8P06CeJHF__MiohuQ8B"
-          logoSrc="./images/product/organizer_logo.png"
+          logoSrc="/images/product/organizer_logo.png"
           href="/products/organizer"
           altText="Collaborative Modern Digital Workspace"
         />

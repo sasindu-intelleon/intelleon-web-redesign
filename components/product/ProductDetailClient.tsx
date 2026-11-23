@@ -21,7 +21,7 @@ const productsData: Record<string, ProductDetail> = {
   nom: {
     title: "NextOrder Manager",
     subtitle: "Hospitality & Retail POS Management System",
-    logo: "../images/product/nom_logo.png",
+    logo: "/images/product/nom_logo.png",
     intro:
       "Meet NextOrder Manager (“NOM”) — an ultra-responsive, cloud-connected restaurant management engine designed for high-volume POS ticketing, kitchen orchestration, and multi-branch inventory tracking. Engineered for modern dining establishments, NOM eliminates kitchen friction and order chaos.",
     features: [
@@ -54,7 +54,7 @@ const productsData: Record<string, ProductDetail> = {
   organizer: {
     title: "Organizer",
     subtitle: "Streamline Your Workflow, Empower Your Team",
-    logo: "../images/product/organizer_logo.png",
+    logo: "/images/product/organizer_logo.png",
     intro:
       "“Organizer” is a powerful, all-in-one productivity solution to help companies seamlessly manage their daily operations. Designed with flexibility and ease-of-use in mind, Organizer allows teams to take control of their task management and communication processes in a centralized platform.",
     features: [
